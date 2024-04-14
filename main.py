@@ -1,5 +1,9 @@
-import sys
-from sayings import goodbye
+def main():
+    x = int(input())
+    print("x squared is", square(x))
 
-if len(sys.argv) == 2:
-    goodbye(sys.argv[1])
+def square(n):
+    return n * n
+
+if __name__ == "__main__":
+    main()
