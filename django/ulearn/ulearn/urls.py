@@ -16,9 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from ulearn.views import index_page
+from ulearn.views import index_page, add_page, add_person
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index_page),
+    path('add/', add_page),
+    path('add_person/', add_person)
 ]
